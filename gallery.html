@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Georges Garden Centre</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logoimg.jpg" alt="Georges Garden Centre" class="d-inline-block align-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle"></i> About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images" ></i> Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="product.html"><i class="bi bi-shop"></i> Product</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> Contact</a></li>
+            </ul>
+            <form class="d-flex mb-4" id="searchForm">
+                <input class="form-control me-2" type="search" id="searchBar" placeholder="Search categories" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          </div>
+        </div>
+      </nav>
+        <!-- Search Results -->
+<div class="py-5" id="searchResultsSection" style="display: none;">
+  <div class="container">
+    <p class="text-center mb-4">Search Results</p>
+    <div class="row" id="searchResults"></div>
+    <!--Search results will be displayed here-->
+  </div>
+</div>
+      
+    <!-- End of Navbar -->
+  
+
+    
+          
+    <!-- Header Section -->
+    <header class="bg-success text-white text-center py-5">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p class="lead">Explore our wide range of Home essentials.</p>
+        </div>
+    </header>
+
+    <section class="products-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/tools.jpeg" class="card-img-top" alt="Gardening Tools">
+                        <div class="card-body">
+                            <h2 class="card-title">Gardening Tools</h2>
+                            <p class="card-text">Essential tools for planting, pruning, and maintaining your garden effortlessly.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/wall-installation.jpeg" class="card-img-top" alt="Wall Installation">
+                        <div class="card-body">
+                            <h2 class ="card-title">Wall Installation</h2>
+                            <p class="card-text">Enhance your space with sturdy and aesthetic wall installation solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/storage.jpeg" class="card-img-top" alt="Storage Solutions">
+                        <div class="card-body">
+                            <h2 class ="card-title">Storage Solutions</h2>
+                            <p class="card-text">Compact and durable storage solutions to keep your space organized.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/raised.jpeg" class="card-img-top" alt="Raised Garden Bed Assembly">
+                        <div class="card-body">
+                            <h2 class ="card-title">Raised Garden Bed Assembly</h2>
+                            <p class="card-text">Create elevated garden spaces for better soil control and plant growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Product 5 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/paint-paint-accessories.jpeg" class="card-img-top" alt="Paint & Paint Accessories">
+                        <div class="card-body">
+                            <h2 class ="card-title">Paint and Paint Accessories</h2>
+                            <p class="card-text">Transform your spaces with our premium paint and paint accessories. Whether you're looking for vibrant colors, subtle shades, or specialty finishes, we have everything you need to bring your vision to life. Our collection includes high-quality paints, brushes, rollers, tape, trays, and more, suitable for both professional projects and DIY enthusiasts. Elevate your painting experience with tools that ensure precision, durability, and ease of application.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/outdoorfurniture.jpeg" class="card-img-top" alt="Outdoor Furniture">
+                        <div class="card-body">
+                            <h2 class ="card-title">outdoor Furniture</h2>
+                            <p class="card-text">Enhance your outdoor living spaces with our stylish and durable outdoor furniture collection. Designed to combine comfort and functionality, our range includes patio sets, lounge chairs, dining tables, and more, crafted from high-quality materials to withstand the elements. Perfect for entertaining, relaxing, or enjoying your garden, our outdoor furniture pieces create the ideal setting for every occasion.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/moving-packing.jpeg" class="card-img-top" alt="Moving & Packing">
+                        <div class="card-body">
+                            <h2 class ="card-title">Supporting moving-packing</h2>
+                            <p class="card-text">Make your relocation stress-free with our moving and packing supplies. From sturdy moving boxes and packing tape to bubble wrap and protective covers, we provide all the essentials to ensure your belongings are safely transported. Whether you’re moving across town or across the country, our high-quality packing materials are designed to offer maximum protection and convenience for your move.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/kitchen.jpeg" class="card-img-top" alt="kitchen">
+                        <div class="card-body">
+                            <h2 class ="card-title">Kitchen Organization</h2>
+                            <p class="card-text">Transform your kitchen into a functional and stylish space with our kitchen organization solutions. From innovative storage containers and drawer dividers to spice racks and cabinet organizers, we offer a range of products to keep your kitchen tidy and efficient. Maximize your space and make meal preparation a breeze with our thoughtfully designed organization tools. </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Product 9 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/indoorNursery.jpg" class="card-img-top" alt="Indoor Nursery">
+                        <div class="card-body">
+                            <h2 class ="card-title">indoor Nursery</h2>
+                            <p class="card-text">Create a serene and vibrant indoor space with our indoor nursery solutions. We offer a wide variety of lush indoor plants, stylish pots, and plant care essentials to enhance your home’s ambiance. Whether you're a seasoned plant lover or a beginner, our collection is designed to help you nurture a thriving green sanctuary indoors.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 10 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/garder" class="card-img-top" alt="Gardening Services">
+                        <div class="card-body">
+                            <h2 class ="card-title">Gardening Services</h2>
+                            <p class="card-text">Transform your garden into a lush oasis with our professional gardening services. From custom garden design to regular maintenance, our expert team offers a range of services tailored to meet your needs. Whether you're looking for planting, pruning, or pest control, we ensure your garden thrives year-round. Let us take care of the hard work while you enjoy the beauty of your outdoor space.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 11 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/GarageStorage.jpeg" class="card-img-top" alt="Garden Storage">
+                        <div class="card-body">
+                            <h2 class ="card-title">GarageStorage</h2>
+                            <p class="card-text">Maximize your garage space with our high-quality garage storage solutions. From shelving and cabinets to overhead storage systems, we offer a variety of options to keep your garage organized and clutter-free. Whether you're storing tools, sports equipment, or seasonal items, our smart storage solutions help you create a functional and tidy space. Say goodbye to disorganized chaos and make your garage a more efficient part of your home!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 12 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/electrical.jpeg" class="card-img-top" alt="Electrical">
+                        <div class="card-body">
+                            <h2 class ="card-title">Electrical</h2>
+                            <p class="card-text">Ensure the safety and efficiency of your home's electrical system with our range of electrical products and services. From high-quality wiring, outlets, and switches to energy-efficient lighting solutions, we provide everything you need for reliable electrical setups. Our professional-grade electrical equipment and expert advice help keep your home powered and safe, whether you're upgrading existing systems or completing new installations. Trust us for all your electrical needs!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Product 13 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/custom-bench-top-installation.jpeg" class="card-img-top" alt="Custom Bench Top Installation">
+                        <div class="card-body">
+                            <h2 class ="card-title">Custom Bench Top Installation</h2>
+                            <p class="card-text">Transform your kitchen or workspace with our custom bench top installation services. We offer a wide variety of materials, including granite, marble, quartz, and timber, allowing you to choose the perfect style and functionality to match your needs. Our expert installers provide precise, seamless fittings, ensuring your new bench top is not only beautiful but durable and practical. Whether you're renovating or building from scratch, trust us for a flawless installation that enhances the heart of your home.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 14 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/colourfulFlowers.jpg" class="card-img-top" alt="colourfulFlowers">
+                        <div class="card-body">
+                            <h2 class ="card-title">colourfulFlowers</h2>
+                            <p class="card-text">Brighten up any space with our vibrant selection of colourful flowers. Whether you're looking to add a pop of colour to your garden, create a stunning bouquet, or simply enjoy the beauty of nature indoors, our flowers come in a wide array of hues and types. From cheerful daisies and radiant roses to exotic orchids and cheerful sunflowers, we offer blooms that cater to every taste and occasion. Bring the beauty of the season to your home with our fresh and lively floral arrangements.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 15 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/cleaning-equipment.jpeg" class="card-img-top" alt="cleaning equipment">
+                        <div class="card-body">
+                            <h2 class ="card-title">Cleaning Equipment</h2>
+                            <p class="card-text">Keep your home or workspace spotless with our premium cleaning equipment. From heavy-duty vacuums and carpet cleaners to mop sets and dusters, we provide all the essential tools you need for efficient and thorough cleaning. Designed for both residential and commercial use, our cleaning equipment is durable, easy to use, and built to tackle any mess. Whether you're looking for floor care solutions, surface cleaning tools, or eco-friendly products, our collection ensures a cleaner, healthier environment for all your cleaning needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 16 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/car-care-products.jpeg" class="card-img-top" alt="Car Care Products">
+                        <div class="card-body">
+                            <h2 class ="card-title">Car Care Products</h2>
+                            <p class="card-text">Maintain your vehicle's pristine condition with our high-quality car care products. From waxes and polishes that restore shine to cleaning solutions that tackle tough dirt and grime, we offer everything you need to keep your car looking like new. Our range includes tire cleaners, upholstery treatments, interior cleaners, and more, all designed to protect your car’s surfaces and ensure a smooth driving experience. Whether you're a car enthusiast or just want to keep your vehicle in top shape, our car care products are perfect for enhancing performance and extending the life of your vehicle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">    
+                <!-- Product 17 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/outdoorNursery.jpg" class="card-img-top" alt="outdoorNursery">
+                        <div class="card-body">
+                            <h2 class ="card-title">Out Door Nursery</h2>
+                            <p class="card-text">Transform your outdoor space with our wide selection of plants and greenery at our Outdoor Nursery. From vibrant flowers and shrubs to hardy trees and climbing vines, we offer a variety of plants that thrive in the great outdoors. Whether you’re looking to create a lush garden, add color to your patio, or enhance your landscape with beautiful, low-maintenance greenery, our outdoor nursery has the perfect plants for every garden style. Our knowledgeable staff can help guide you in choosing the best plants to suit your environment and growing conditions, ensuring your garden flourishes all year round.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 18 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/Bathroom-and-plumbing.jpeg" class="card-img-top" alt="Bathroom & plumbing">
+                        <div class="card-body">
+                            <h2 class ="card-title">Bathroom and Plumbing</h2>
+                            <p class="card-text">Upgrade your home with our premium Bathroom and Plumbing services and products. Whether you're remodeling your bathroom or addressing plumbing issues, we offer a range of high-quality fixtures, fittings, and tools to ensure your space functions beautifully and efficiently. From stylish sinks, faucets, and showers to reliable pipes and water heaters, our bathroom and plumbing solutions cater to all your needs. Our expert team provides installation, repair, and maintenance services, helping you create a functional, comfortable, and modern bathroom while ensuring your plumbing systems run smoothly for years to come.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 19 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/Buidingandhardware.jpeg" class="card-img-top" alt="building and hardware">
+                        <div class="card-body">
+                            <h2 class ="card-title">Building and Hardware</h2>
+                            <p class="card-text">Explore our extensive selection of Building and Hardware products to support all your construction, renovation, and DIY projects. From essential tools and materials to advanced machinery and fittings, we provide everything you need to get the job done right. Whether you're a professional contractor or a home DIY enthusiast, our high-quality products ensure durability and reliability. Choose from a wide range of wood, cement, nails, screws, adhesives, and power tools, all designed to meet the highest standards. With our Building and Hardware solutions, you’ll have the right resources for every stage of your building project.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 20 -->
+                
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/curtainsandblinds.jpeg" class="card-img-top" alt="curtains and blinds">
+                        <div class="card-body">
+                            <h2 class ="card-title">Curtains and Blinds</h2>
+                            <p class="card-text">Transform your living spaces with our stylish and functional Curtains and Blinds. Offering a wide range of designs, colors, and materials, our collection is perfect for adding privacy, enhancing natural light control, and elevating your home's décor. Whether you prefer the elegance of flowing curtains or the sleek look of modern blinds, we have options to suit every taste and room. Choose from blackout curtains, sheer panels, roller blinds, Venetian blinds, and more, all crafted with high-quality materials for lasting durability and beauty. Let your windows make a statement with our premium Curtains and Blinds collection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+               
+            
+        </div>
+    </section>
+
+    
+
+
+   
+    
+   
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">© 2025 Georges Garden Centre. All rights reserved.</p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

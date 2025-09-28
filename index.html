@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Georges Garden Centre</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header with Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+    <img src="images/logoimg.jpg" alt="George's Garden Centre logo" class="d-inline-block align-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle"></i> About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images"></i> Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="product.html"><i class="bi bi-shop"></i> Product</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> Contact</a></li>
+      </ul>
+      <form class="d-flex mb-4" id="searchForm">
+        <input class="form-control me-2" type="search" id="searchBar" placeholder="Search categories" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+   <!-- Search Results -->
+<div class="py-5" id="searchResultsSection" style="display: none;">
+  <div class="container">
+    <p class="text-center mb-4">Search Results</p>
+    <div class="row" id="searchResults"></div>
+    <!--Search results will be displayed here-->
+  </div>
+</div>
+
+<!-- Carousel -->
+<div id="gardenCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/raised.jpeg" class="d-block w-100" alt="Raised garden bed with flowers">
+      <div class="carousel-caption">
+        <p>Beautiful Gardens</p>
+        <p>Transform your space with lush greenery.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+     <img src="images/tools.jpeg" class="d-block w-100" alt="Gardening tools laid on wooden table">
+      <div class="carousel-caption">
+        <p>Quality Tools</p>
+        <p>Everything you need for your gardening journey.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+     <img src="images/fertilicer.png" class="d-block w-100" alt="Organic fertilizer bag for garden use">
+      <div class="carousel-caption">
+        <p>Organic Fertilizers</p>
+        <p>Boost plant growth with our eco-friendly products.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#gardenCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#gardenCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Welcome Section -->
+<section class="py-5 text-center">
+  <div class="container">
+    <h1 class="display-4">Welcome to Georges Garden Centre</h1>
+    <p class="lead">Your one-stop shop for all your gardening needs. Explore our wide range of plants, tools, and eco-friendly products!</p>
+    <a href="product.html" class="btn btn-success btn-lg"><i class="fas fa-shopping-cart" aria-hidden="true"></i> Shop Now</a>
+  </div>
+</section>
+
+<!-- YouTube Video Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Featured Videos</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/wWteSkOpiyk" title="YouTube video 1" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/e4Tk-kcOmUA" title="YouTube video 2" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/SQez5Kd-_sY" title="YouTube video 3" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/2_mqJA_pol4" title="YouTube video 4" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/Vx4UwjKCW5Q" title="YouTube video 5" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/8omrQIX8R1g" title="YouTube video 6" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Categories -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Categories</h2>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-3 mb-4">
+        <div class="card">
+         <img src="images/shop/plants/Fragrant/Orange-Jessamine.jpg" class="card-img-top" alt="Orange Jessamine plant in bloom">
+          <div class="card-body">
+            <h3 class="card-title h5">Plants</h3>
+            <p class="card-text">Fragrant, fruits, herbs, and more!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 mb-4">
+        <div class="card">
+          <img src="images/itemsToBuy.jpg" class="card-img-top" alt="Display of colorful garden pots">
+          <div class="card-body">
+            <h3 class="card-title h5">Pots</h3>
+            <p class="card-text">Elegant and durable pots for every plant.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 mb-4">
+        <div class="card">
+        <img src="images/shop/tools/GTH-SHTMHRHS-burgon-and-ball-rhs-endorsed-stainless-mid-handled-trowel-01.webp" class="card-img-top" alt="Mid-handled garden trowel on display">
+          <div class="card-body">
+            <h3 class="card-title h5">Garden Tools</h3>
+            <p class="card-text">High-quality tools for your gardening tasks.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 mb-4">
+        <div class="card">
+          <img src="images/shop/fertiliser/garden-health-treatment.jpeg" class="card-img-top" alt="Garden health treatment fertilizer bag">
+          <div class="card-body">
+            <h3 class="card-title h5">Fertilizers</h3>
+            <p class="card-text">Eco-friendly fertilizers for healthy plants.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4 class="h5">About Georges Garden Centre</h4>
+        <p>We provide top-quality gardening products and services to help you create and maintain your perfect garden.</p>
+      </div>
+      <div class="col-md-4">
+        <h4 class="h5">Quick Links</h4>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light">Home</a></li>
+          <li><a href="about.html" class="text-light">About</a></li>
+          <li><a href="gallery.html" class="text-light">Gallery</a></li>
+          <li><a href="product.html" class="text-light">Product</a></li>
+          <li><a href="contact.html" class="text-light">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4 class="h5 mb-3">Subscribe to Our Newsletter</h4>
+        <p>Stay updated with our latest offers and gardening tips!</p>
+        <form action="#" method="post" class="d-flex flex-column" id="subscribeForm">
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr class="border-light">
+    <div class="text-center">
+      <p class="mb-0">© 2025 Georges Garden Centre. All rights reserved.</p>
+    </div>
+    <div class="text-center mt-3">
+      <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-light me-2"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

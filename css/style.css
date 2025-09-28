@@ -1,0 +1,225 @@
+
+body{
+    background-color: #f0f8ff; /* Light blue background */
+    font-family: Arial, sans-serif; /* Font style */
+    color: #333; /* Default text color */
+    margin: 0;
+    padding: 0;
+}
+
+/*index.html*/
+/* Navbar Styling */
+.custom-navbar {
+    background: linear-gradient(to right, #11411c, #85e085); /* Gradient effect */
+    color: white; /* Default text color */
+    box-shadow: 0 2px 4px rgba(15, 199, 70, 0.1); /* Subtle shadow */
+}
+
+/* Navbar links */
+.custom-navbar .nav-link {
+    color: white; /* Default link color */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ffcc00; /* Yellow hover effect */
+}
+
+/* Navbar brand logo */
+.custom-navbar .navbar-brand img {
+    height: 60px; /* Adjusted logo size for consistency */
+    border-radius: 5px; /* Optional rounded effect */
+}
+
+/* Toggler icon styling */
+.custom-navbar .navbar-toggler-icon {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white toggler */
+    border-radius: 3px;
+}
+
+/* Search Bar */
+.custom-navbar .form-control {
+    width: 220px; /* Default width */
+    transition: width 0.3s ease-in-out; /* Smooth transition for focus effect */
+}
+
+.custom-navbar .form-control:focus {
+    width: 300px; /* Expands when focused */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+}
+
+/* Search Button */
+.custom-navbar .btn-outline-success {
+    color: white; /* Text color */
+    border-color: white; /* Border color */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.custom-navbar .btn-outline-success:hover {
+    background-color: rgb(234, 231, 22); /* Change background on hover */
+    color: #28a745; /* Green text on hover */
+}
+
+/* Search Results Section */
+#searchResults {
+    margin-top: 20px;
+  
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+  
+      &:hover {
+        transform: translateY(-5px);
+      }
+  
+      .card-title {
+        color: #28a745; /* Green title */
+        font-weight: bold;
+      }
+    }
+  }
+  
+  #searchForm {
+    margin-bottom: 20px;
+  }
+  
+  
+ 
+    /* Carousel styling */
+    #gardenCarousel {
+        height: 700px; /* Set the desired height */
+        overflow: hidden; /* Prevents overflow */
+      }
+      
+      #gardenCarousel .carousel-inner {
+        height: 100%; /* Ensures inner elements take full height */
+      }
+      
+      #gardenCarousel .carousel-item img {
+        height: 100%; /* Adjust the image height */
+        width: 100%; /* Ensures responsiveness */
+        object-fit: cover; /* Ensures the image fills the space without distortion */
+      }
+      
+  
+  
+      .carousel-caption {
+        position: absolute;
+        top: 50%; /* Vertically center */
+        left: 50%; /* Horizontally center */
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white; /* White text for contrast */
+        background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+        padding: 20px;
+        border-radius: 10px; /* Rounded edges for a polished look */
+      }
+      
+      .carousel-caption h5 {
+        font-size: 2rem; /* Larger font for the heading */
+        margin-bottom: 10px;
+      }
+      
+      .carousel-caption p {
+        font-size: 1.2rem; /* Slightly smaller font for the paragraph */
+      }
+      
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1); /* Makes the icons visible on light backgrounds */
+  }
+  /*featured Categories*/
+  .card {
+    width: 100%; /* Responsive width */
+    height: 400px; /* Fixed height for uniformity */
+    display: flex;
+    flex-direction: column; /* Stack contents vertically */
+    justify-content: space-between; /* Space out card contents */
+    text-align: center; /* Center-align card text */
+  }
+  
+  .card-img-top {
+    height: 300px; /* Consistent height for all images */
+    object-fit: cover; /* Maintain aspect ratio while cropping excess */
+  }
+  
+  .card-body {
+    flex-grow: 1; /* Ensure card body stretches */
+    display: flex;
+    flex-direction: column; /* Stack contents vertically */
+    justify-content: space-between; /* Evenly distribute title and text */
+    padding: 10px; /* Add some padding for spacing */
+  }
+  
+  .card-title {
+    font-size: 1.2rem; /* Slightly larger font size for title */
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 0.95rem; /* Smaller size for supporting text */
+    color: #555; /* Subtle color for description */
+  }
+/*news letter*/
+/* Newsletter Subscription Section */
+input[type="email"] {
+    border: 2px solid #28a745; /* Green border for garden theme */
+    border-radius: 5px 0 0 5px; /* Rounded corners for left side */
+    padding: 10px; /* Comfortable padding */
+    font-size: 16px; /* Readable font size */
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border-color: #85e085; /* Brighter green on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle focus glow */
+}
+
+.btn-primary {
+    background-color: #1e652d; /* Garden theme green */
+    border-color: #28a745; /* Matching border */
+    border-radius: 0 5px 5px 0; /* Rounded corners for right side */
+    font-weight: bold; /* Emphasized text */
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #85e085; /* Lighter green on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+  /*About.html*/
+
+
+
+
+
+
+
+  @media (max-width: 768px) {
+    .carousel-caption h5 {
+      font-size: 1.2rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+  }
+  @media (max-width: 768px) {
+    #gardenCarousel {
+      height: 300px; /* Smaller height for mobile screens */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    #gardenCarousel {
+      height: 600px; /* Larger height for desktops */
+    }
+  }
+  
+  

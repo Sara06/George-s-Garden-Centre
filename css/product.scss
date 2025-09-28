@@ -1,0 +1,131 @@
+// Variables
+$font-family: Arial, sans-serif;
+$background-color: #f8f9fa;
+$item-background: #fff;
+$item-border: 1px solid #ddd;
+$item-radius: 10px;
+$item-hover-scale: 1.05;
+$btn-danger: #dc3545;
+$btn-danger-hover: #c82333;
+$container-max-width: 1200px;
+$card-width: 250px;
+$card-height: 550px;
+
+// Reset and global styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // Ensures padding and border are within the element's width/height
+}
+
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; // Prevent horizontal scrolling
+}
+
+// Responsive container
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 10px;
+  flex-wrap: wrap; // Allow items to wrap for responsiveness
+  gap: 1rem;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color:white;
+    
+  }
+
+  .row {
+    margin-bottom: 1rem;
+
+    &.g-4 {
+      gap: 1rem;
+    }
+
+    #cart-items-primary {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #cart-items-secondary {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 1rem;
+      border: 1px solid #ddd;
+    }
+  }
+}
+
+// Cart items
+.cart-item {
+  background: $item-background;
+  border: $item-border;
+  border-radius: $item-radius;
+  padding: 15px;
+  width: $card-width; // Fixed width
+  height: $card-height; // Fixed height
+  margin-bottom: 20px;
+  text-align: center;
+  
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale($item-hover-scale);
+  }
+
+  img {
+    max-width: 100%; // Fit within parent width
+    max-height: 60%; // Ensure consistent image sizing
+    object-fit: cover; // Maintain aspect ratio without distortion
+    border-radius: 5px;
+  }
+
+    h5 {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      text-align: center;
+      
+    }
+  }
+  
+
+  .btn-danger {
+    width: 90%; // Fit within item width
+    background-color: $btn-danger;
+    border: none;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $btn-danger-hover;
+    }
+  }
+
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .cart-item {
+    width: 100%; // Use full width on smaller screens
+    height: auto; // Adjust height naturally
+  }
+
+  img {
+    height: auto; // Adjust image height to fit content
+  }
+}
+ 

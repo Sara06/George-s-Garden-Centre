@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Georges Garden Centre</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logoimg.jpg" alt="Georges Garden Centre" class="d-inline-block align-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle"></i> About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images" ></i> Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="product.html"><i class="bi bi-shop"></i> Product</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> Contact</a></li>
+            </ul>
+            <form class="d-flex mb-4" id="searchForm">
+                <input class="form-control me-2" type="search" id="searchBar" placeholder="Search categories" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          </div>
+        </div>
+      </nav>
+         <!-- Search Results -->
+<div class="py-5" id="searchResultsSection" style="display: none;">
+  <div class="container">
+    <p class="text-center mb-4">Search Results</p>
+    <div class="row" id="searchResults"></div>
+    <!--Search results will be displayed here-->
+  </div>
+</div>
+      
+    <!-- End of Navbar -->
+  
+
+    <!-- About Us Section -->
+
+    <header class="bg-success text-white text-center py-5">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p class="lead">Explore our wide range of Home essentials.</p>
+        </div>        
+    </header>
+<main>
+    <h2 class="text-center my-4">Shopping Cart</h2>
+    <div class="row mb-4">
+        <div class="col text-center">
+            
+            <p class="fs-5 fw-semibold text-success">
+                🌿 <strong>Welcome to Green Organic Garden</strong> 🌿
+            </p>
+            <p>
+                Transform your shopping experience into a journey of growth, beauty, and sustainability. Whether you're cultivating fragrant blossoms, growing delicious herbs, or finding the perfect tools for your garden, we’re here to help every step of the way.
+            </p>
+            <p>
+                Explore our handpicked selection of plants, pots, and gardening essentials, all crafted to bring your green dreams to life. From nature lovers to seasoned gardeners, we’ve got something for everyone.
+            </p>
+        </div>
+    </div>
+
+
+
+   
+      <!-- Cart items grid -->
+      <div class="container">
+        <div class="cart-width-height">
+            <div class="row g-4" id="cart-items">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+           
+
+            <!-- Dynamic Content Injected Here -->
+            </div>
+        </div>
+        </div>
+    </div>
+  
+              
+                        
+
+    </main>
+   
+      <!-- Shopping Cart -->
+<!-- Shopping Cart -->
+<div class="container">
+    
+    <div id="cart-items-primary" class="row"></div> <!-- Primary cart items -->
+    <div id="cart-items-secondary" class="row g-4"></div> <!-- Secondary cart items -->
+    <div class="text-end">
+      <h3>Subtotal: <span id="subtotal">$0.00</span></h3>
+      <h4>Total (incl. shipping): <span id="total">$0.00</span></h4>
+      <button id="checkout-btn" class="btn btn-success w-100">Checkout</button>
+    </div>
+  </div>
+  
+               
+
+   
+   
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">© 2025 Georges Garden Centre. All rights reserved.</p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
